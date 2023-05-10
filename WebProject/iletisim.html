@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <form action="girisyap.html">
+            <button type="submit" class="btn btn-secondary">Giriş yap</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-auto fs-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="ilgialanlarim.html">İlgi
+                        Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mirasım.html">Mirasım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container my-5">
+    <script src="formdenetim.js"></script>
+    <form class="row g-3" action="formbilgileri.php" method="POST" name="form" onsubmit="return form_kontrol()">
+
+        <div class="col-md-6">
+            <label class="form-label">Ad</label>
+            <input type="text" class="form-control" placeholder="Adınız" aria-label="First name" name="Ad">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Soyad</label>
+            <input type="text" class="form-control" placeholder="Soyadınız" aria-label="Last name" name="Soyad">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="text" class="form-control" id="inputEmail4" name="Mail">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="inputPassword4" name="Şifre">
+        </div>
+        <div class="col-12">
+            <label for="exampleFormControlTextarea1" class="form-label">İletişim Kutusu</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Bizimle İletişime Geçin :)" name="Mesaj"></textarea>
+        </div>
+
+
+
+        <div class="col-md-2">
+            <p>Cinsiyetiniz</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Cinsiyet" id="flexRadioDefault1" value="Erkek">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Erkek
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Cinsiyet" id="flexCheckChecked" checked
+                    value="Kadın">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Kadın
+                </label>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <p>Mezun Olunan Yada Okunan Üniversite</p>
+            <select id="inputState" class="form-select" name="Lisans">
+                <option value="Orta Dünya Teknik Üniversitesi" name="Lisans" selected>Orta Dünya Teknik Üniversitesi</option>
+                <option value="Mordor Mesleki Öğrenim Üniversitesi" name="Lisans">Mordor Mesleki Öğrenim Üniversitesi</option>
+                <option value="Mordor Mesleki Öğrenim Üniversitesi" name="Lisans">Urukai Yüksek Üniversitesi</option>
+                <option value="Mordor Mesleki Öğrenim Üniversitesi" name="Lisans">Elf Üniversitesi</option>
+                <option value="Sakarya Universitesi" name="Lisans">Sakarya Üniversitesi</option>
+                <option value="Orta Doğu Teknik Üniversitesi" name="Lisans">Orta Doğu Teknik Üniversitesi</option>
+                <option value="Boğaziçi Üniversitesi" name="Lisans">Boğaziçi Üniversitesi</option>
+                <option value="Eskişehir Üniversitesi" name="Lisans">Eskişehir Üniversitesi</option>
+                <option value="Hacettepe Üniversitesi" name="Lisans">Hacettepe Üniversitesi</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <p>Yaş Aralığınız</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Yaş" id="flexRadioDefault1" value="12-18">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    12-18
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Yaş" id="flexCheckChecked" checked value="18-24">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    18-24
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Yaş" id="flexCheckChecked" checked value="24-36">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    24-36
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Yaş" id="flexCheckChecked" checked value="36+">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    36+
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <p>Yaptığınız Aktiviteleri Seçiniz</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="KitapOkumak">
+                <label class="form-check-label" for="gridCheck">
+                    Kitap okumak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="KahveIcmek">
+                <label class="form-check-label" for="gridCheck">
+                    Kahve içmek
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="Programlama">
+                <label class="form-check-label" for="gridCheck">
+                    Programlama yapmak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="Programlama">
+                <label class="form-check-label" for="gridCheck">
+                    Hayatı sorgulamak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="Programlama">
+                <label class="form-check-label" for="gridCheck">
+                    Dizi/Film/Anime izlemek
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="Aktivite[]" value="Programlama">
+                <label class="form-check-label" for="gridCheck">
+                    ShitPost yapmak
+                </label>
+            </div>
+        </div>
+        <hr width=300 align=left>
+        <div class="col-md-1">
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </div>
+        <div class="col-md-1">
+            <button type="reset" class="btn btn-primary">Temizle</button>
+        </div>
+    </form>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
