@@ -11,11 +11,6 @@ p{
     font-size:larger;
 }
 
-.ikon{
-    margin-right: 3px;
-    font-size: 14px;
-}
-
 #backgroundFoto{
     background-image: url("img/AnaSayfa.jpg");
     height: 600px;
@@ -25,17 +20,25 @@ p{
     background-position: center;
 }
 
-#black{
-    height: 600px;
-    background-color: black;
-    opacity: 0.2;
+.hakkımda{
+    text-align: center;
 }
 
-#konu{
-    position: absolute;
-    top: 70%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-    color: white;
+#backgroundFotoLogin {
+    background-image: url("img/AnaSayfa.jpg");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
+
+.backgroundMiras{
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
